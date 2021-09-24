@@ -133,12 +133,41 @@ p {
     height: 600px;
 }
 .slider-incredible-bg{
-    background: url(../img/incrediblebg.jpg) fixed bottom;
+    background: url(../img/incrediblebg.jpg);
+    height: 80vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 .slider-home-bg {
-    background: url(../img/img3.jpg) fixed bottom;
+    background: url(../img/img3.jpg);
+    height: 80vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+.slider .text h3{
+    font-weight: 800;
+}
+.button-style {
+    button {
+        background-color: #00000000;
 
+        border-radius : 4px;
+        padding       : 10px;
+        line-height   : 100%;
+        text-transform: uppercase;
+        margin        : auto;
+        font-size: 1rem;
+
+        &:hover {
+            background-color: $basic-color;
+            color           : $basic-another-color;
+        }
+    }
+
+}
 .img-overley {
     &::after {
         content         : "";
@@ -473,20 +502,3 @@ li {
     line-height  : 5.42rem;
 }
 
-.button-style {
-    button {
-        background-color: #00000000;
-
-        border-radius : 3px;
-        padding       : 8px;
-        line-height   : 100%;
-        text-transform: uppercase;
-        margin        : auto;
-
-        &:hover {
-            background-color: $basic-color;
-            color           : $basic-another-color;
-        }
-    }
-
-}
